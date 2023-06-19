@@ -132,18 +132,17 @@ h2 {
     align-items: center;
     justify-content: center;
     position: relative;
-    width: 12rem;
-    height: 12rem;
-    background: orangered;
+    margin-right: 4rem;
+    width: 9rem;
+    height: 9rem;
 }
 
 .progress svg {
-    width: 12rem;
-    height: 12rem;
+    width: 9rem;
+    height: 9rem;
     position: absolute;
-    /* top: 0%;
-    left: 0%; */
-    /* background: red; */
+    top: 0%;
+    left: 0%;
     overflow: overlay;
     display: flex;
     justify-content: center;
@@ -179,6 +178,11 @@ h2 {
     align-items: center;
     justify-content: center;
     border-radius: 50%;
+}
+
+.progress-bar {
+    color: #ffffffcc;
+    font-size: 2rem;
 }
 
 /*
