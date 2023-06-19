@@ -458,9 +458,10 @@ h1 {
     align-items: center;
 }
 
-.text .notification-icon {
+.address-icon {
     color: grey;
     height: 2rem;
+    width: 2rem;
     margin-right: 0.8rem;
 }
 
@@ -475,7 +476,7 @@ h1 {
 
 .textinomial-info h2 {
     color: black;
-    margin-left: 1rem;
+    margin-bottom: 0.5rem;
     font-size: 2rem;
 }
 
