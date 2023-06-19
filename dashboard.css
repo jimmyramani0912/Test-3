@@ -6,10 +6,11 @@
 
 html {
     font-size: 62.5%;
+    font-family: sans-serif;
 }
 
 .hero-img {
-    width: 100vw;
+    width: 98.93vw;
     height: 40vh;
     object-fit: cover;
 }
@@ -26,6 +27,17 @@ h2 {
 
 .hero {
     position: relative;
+}
+
+.logo {
+    display: flex;
+}
+
+.logo-icon {
+    color: white;
+    height: 2rem;
+    width: 2rem;
+    padding: 0.2rem 0.8rem 0 0;
 }
 
 .header {
@@ -107,17 +119,74 @@ h2 {
 }
 
 .box-right {
-    background-color: rgba(128, 128, 128, 0.521);
+    background-color: rgba(128, 128, 128, 0.345);
     height: 14rem;
-    width: 34rem;
+    width: 36rem;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.box-right .notification-icon {
-    height: 5rem;
-    width: 5rem;
+.circle-wrap {
+    margin: 150px auto;
+    width: 120px;
+    height: 120px;
+    background: rgba(128, 128, 128, 0.188);
+    border-radius: 50%;
+    border: 1px solid #cdcbd0;
+}
+
+.circle-wrap .circle .mask,
+.circle-wrap .circle .fill {
+    width: 120px;
+    height: 120px;
+    position: absolute;
+    border-radius: 50%;
+}
+
+.circle-wrap .circle .mask {
+    clip: rect(0px, 150px, 150px, 75px);
+}
+
+.circle-wrap .inside-circle {
+    width: 92px;
+    height: 92px;
+    border-radius: 50%;
+    background: rgba(128, 128, 128, 0.945);
+    line-height: 100px;
+    text-align: center;
+    margin-top: 14px;
+    margin-left: 14px;
+    color: white;
+    position: absolute;
+    z-index: 100;
+    font-weight: 700;
+    font-size: 2em;
+}
+
+.mask .fill {
+    clip: rect(0px, 75px, 150px, 0px);
+    background-color: rgba(255, 68, 0, 0.464);
+}
+
+.mask.full,
+.circle .fill {
+    animation: fill ease-in-out 3s;
+    transform: rotate(135deg);
+}
+
+@keyframes fill {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(135deg);
+    }
+}
+
+.right {
+    margin-right: 2rem;
 }
 
 .right h3 {
@@ -136,6 +205,24 @@ p {
     padding-right: 2rem;
 }
 
+.camera {
+    height: 3.2rem;
+    width: 4.0rem;
+    background-color: rgba(128, 128, 128, 0.345);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+    border-radius: 0.4rem;
+    margin-left: auto;
+}
+
+.camera-icon {
+    color: rgba(255, 255, 255, 0.477);
+    height: 2.3rem;
+    width: 2.3rem;
+}
+
 .section-hero-2 {
     display: grid;
     grid-template-columns: 32rem 1fr;
@@ -145,6 +232,7 @@ p {
 .hero-2-left {
     grid-row: 2/-1;
     margin-left: 4rem;
+    margin-top: 1.4rem;
     border-right: 1px solid grey;
 }
 
@@ -156,7 +244,7 @@ p {
     border-bottom: 1px solid grey;
 }
 
-.hero-2-left .notification-icon {
+.option-icon {
     height: 2rem;
     width: 2rem;
     color: grey;
@@ -229,9 +317,10 @@ p {
     background-color: rgb(14, 131, 88);
 }
 
-.btn-right .notification-icon {
-    height: 2rem;
-    margin-right: 0;
+.claim {
+    height: 1.5rem;
+    width: 1.5rem;
+    margin-right: 1rem;
 }
 
 .item-right-1 .notification-icon {
@@ -244,21 +333,29 @@ p {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-right: 2.4rem;
-    padding: 1.4rem 0;
+    padding: 1.4rem 1rem;
     margin-top: 1rem;
+    margin-left: 1.5rem;
     padding-bottom: 3rem;
 }
 
-.nav-items-left h4 {
+.nav-items-left a {
     color: grey;
     font-size: 1.6rem;
-    letter-spacing: 0.08rem;
+    /* letter-spacing: 0.08rem; */
     font-weight: bold;
+}
+
+.nav-items-left a:hover {
+    color: #fff;
+    cursor: pointer;
+    color: rgba(255, 68, 0, 0.718);
+    border-bottom: 3px solid orangered;
 }
 
 .item-right :nth-child(2) {
     color: black;
+    text-decoration: none;
 }
 
 .item-right-1 {
@@ -266,16 +363,16 @@ p {
     justify-content: center;
     align-items: center;
     color: black;
-    padding-right: 1rem;
     margin-left: 1.2rem;
     margin-right: 1.2rem;
     border-bottom: 3px solid orangered;
 }
 
-.nav-items-right .notification-icon {
-    color: white;
+.home-icon {
+    color: orangered;
     height: 2rem;
-    margin-right: 0;
+    width: 2rem;
+    margin-right: 1rem;
 }
 
 .cards {
@@ -413,6 +510,19 @@ h1 {
     height: 49rem;
 }
 
+.scroll {
+    height: 49rem;
+    overflow-x: hidden;
+    overflow-y: auto;
+    text-align: justify;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+
+.scroll::-webkit-scrollbar {
+    display: none;
+}
+
 .activities h4 {
     color: grey;
     font-size: 1.6rem;
@@ -450,6 +560,22 @@ h1 {
     position: absolute;
     border-radius: 50%;
     left: 4rem;
+}
+
+.dot2 {
+    background-color: rgb(54, 187, 21);
+}
+
+.dot3 {
+    background-color: rgb(233, 241, 7);
+}
+
+.dot4 {
+    background-color: rgb(242, 4, 4);
+}
+
+.dot5 {
+    background-color: rgb(244, 0, 211);
 }
 
 .shadow {

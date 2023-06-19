@@ -4,11 +4,11 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./dashboard.css" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <!-- <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
       href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap"
       rel="stylesheet"
-    />
+    /> -->
 
     <script
       type="module"
@@ -36,10 +36,11 @@
           <div class="header">
             <div class="header-section">
               <div class="logo">
+                <ion-icon name="chatbox" class="logo-icon"></ion-icon>
                 <h3 class="logo-text">SKS Funding</h3>
               </div>
               <div class="nav-main-item">
-                <button class="btn">Need Help</button>
+                <button class="btn">NEED HELP</button>
                 <ion-icon
                   name="notifications-outline"
                   class="notification-icon"
@@ -74,16 +75,32 @@
                 </div>
               </div>
 
-              <div class="box-right">
-                <ion-icon
-                  name="notifications-outline"
-                  class="notification-icon"
-                ></ion-icon>
-                <div class="right">
-                  <h3>Profile Completion</h3>
-                  <p>Please complete profile</p>
+              <div class="box-right-main">
+                <div class="box-right">
+                  <div class="circle-wrap">
+                    <div class="circle">
+                      <div class="mask full">
+                        <div class="fill"></div>
+                      </div>
+                      <div class="mask half">
+                        <div class="fill"></div>
+                      </div>
+                      <div class="inside-circle">75%</div>
+                    </div>
+                  </div>
 
-                  <button class="btn">COMPLETE</button>
+                  <div class="right">
+                    <h3>Profile Completion</h3>
+                    <p>Please complete profile</p>
+
+                    <button class="btn">COMPLETE</button>
+                  </div>
+                </div>
+                <div class="camera">
+                  <ion-icon
+                    name="camera-outline"
+                    class="camera-icon"
+                  ></ion-icon>
                 </div>
               </div>
             </div>
@@ -97,10 +114,7 @@
             <div class="title-text">
               <h3>ABOUT MY FAMILY</h3>
             </div>
-            <ion-icon
-              name="notifications-outline"
-              class="notification-icon"
-            ></ion-icon>
+            <ion-icon name="ellipsis-horizontal" class="option-icon"></ion-icon>
           </div>
           <div class="img-items">
             <div class="title-1">
@@ -168,10 +182,7 @@
             <div class="title-text">
               <h3>ABOUT ME</h3>
             </div>
-            <ion-icon
-              name="notifications-outline"
-              class="notification-icon"
-            ></ion-icon>
+            <ion-icon name="ellipsis-horizontal" class="option-icon"></ion-icon>
           </div>
           <div class="info-text">
             <h4>EMAIL</h4>
@@ -199,24 +210,18 @@
           <div class="navbar">
             <div class="nav-items-left">
               <div class="item-right-1 item-right">
-                <ion-icon
-                  name="notifications-outline"
-                  class="notification-icon"
-                ></ion-icon>
-                <h4>DASHBOARD</h4>
+                <ion-icon name="home" class="home-icon"></ion-icon>
+                <h3 class="hover">DASHBOARD</h3>
               </div>
-              <h4 class="item-right">NEW CLAIMS</h4>
-              <h4 class="item-right">COMPLETED CLAIMS</h4>
-              <h4 class="item-right">PAST CLAIMS</h4>
-              <h4 class="item-right">MEMBERS</h4>
-              <h4 class="item-right">MY CLAIMS</h4>
+              <a class="item-right hover">NEW CLAIMS</a>
+              <a class="item-right hover">COMPLETED CLAIMS</a>
+              <a class="item-right hover">PAST CLAIMS</a>
+              <a class="item-right hover">MEMBERS</a>
+              <a class="item-right hover">MY CLAIMS</a>
             </div>
             <button class="btn btn-right">
-              <ion-icon
-                name="notifications-outline"
-                class="notification-icon"
-              ></ion-icon>
-              CLAIM
+              <ion-icon name="pricetags" class="claim"></ion-icon>
+              <h4>CLAIM</h4>
             </button>
           </div>
           <div class="cards">
@@ -350,10 +355,7 @@
                     </div>
                   </div>
                   <button class="btn texy-btn">
-                    <ion-icon
-                      name="notifications-outline"
-                      class="notification-icon"
-                    ></ion-icon>
+                    <ion-icon name="pricetags" class="claim"></ion-icon>
                     <h3>PAY</h3>
                   </button>
                 </div>
@@ -391,10 +393,7 @@
                     </div>
                   </div>
                   <button class="btn texy-btn">
-                    <ion-icon
-                      name="notifications-outline"
-                      class="notification-icon"
-                    ></ion-icon>
+                    <ion-icon name="pricetags" class="claim"></ion-icon>
                     <h3>PAY</h3>
                   </button>
                 </div>
@@ -432,15 +431,12 @@
                     </div>
                   </div>
                   <button class="btn texy-btn">
-                    <ion-icon
-                      name="notifications-outline"
-                      class="notification-icon"
-                    ></ion-icon>
+                    <ion-icon name="pricetags" class="claim"></ion-icon>
                     <h3>PAY</h3>
                   </button>
                 </div>
               </div>
-              <div class="activities shadow">
+              <div class="activities shadow scroll">
                 <h4>ACTIVITY</h4>
                 <div class="activity-info">
                   <div class="dot dot1"></div>
@@ -462,6 +458,18 @@
                 </div>
                 <div class="activity-info">
                   <div class="dot dot4"></div>
+                  <h3>102 New Members</h3>
+                  <p>23 memeber are got claimed in washington DC</p>
+                  <p class="time">05:40pm</p>
+                </div>
+                <div class="activity-info">
+                  <div class="dot dot5"></div>
+                  <h3>Claimed $2000</h3>
+                  <p>23 memeber are got claimed in washington DC</p>
+                  <p class="time">05:40pm</p>
+                </div>
+                <div class="activity-info">
+                  <div class="dot dot6"></div>
                   <h3>102 New Members</h3>
                   <p>23 memeber are got claimed in washington DC</p>
                   <p class="time">05:40pm</p>
