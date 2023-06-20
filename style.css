@@ -143,7 +143,7 @@ h2 {
     position: absolute;
     top: 0%;
     left: 0%;
-    overflow: overlay;
+    overflow: visible;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -373,6 +373,7 @@ p {
     margin-right: 4rem;
     justify-content: center;
     align-items: center;
+    margin-top: -0.8rem;
     letter-spacing: 0.08rem;
     background-color: rgb(14, 131, 88);
 }
@@ -482,15 +483,16 @@ p {
 .card-img {
     margin-left: 1.6rem;
     display: flex;
+
 }
 
 .card-img img {
     border-radius: 50%;
+    border: 2px solid white;
     height: 3.5rem;
     width: 3.5rem;
     margin-left: -1.8rem;
 }
-
 
 .img-item-main::after {
     content: "+32";
