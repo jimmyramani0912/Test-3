@@ -643,6 +643,10 @@ h1 {
     margin: 0 4.5rem;
 }
 
+.margin-bt {
+    margin-bottom: 3rem;
+}
+
 .activity-info p {
     margin-bottom: 0;
 }
