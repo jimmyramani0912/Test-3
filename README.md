@@ -13,7 +13,7 @@ This website was built using HTML & CSS. It features a design, interactive eleme
 To view the website locally or make changes, follow these steps:
 
 1. Clone the repository: `git clone https://github.com/jimmyramani0912/Test-3.git`
-2. Navigate to the project directory: `cd my-awesome-website`
+2. Navigate to the project directory: `cd Test-3`
 3. Open the `index.html` file in your preferred web browser.
 
 ## Contributing
