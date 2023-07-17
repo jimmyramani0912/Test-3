@@ -2,7 +2,7 @@
 
 Welcome to my awesome website! This site showcases my projects, portfolio, and other cool stuff.
 
-Check out the live site: [Layout](https://test-1-me.netlify.app/)
+Check out the live site: [Dashboard](https://test-3-me.netlify.app/)
 
 ## About
 
