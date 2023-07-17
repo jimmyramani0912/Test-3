@@ -6,7 +6,7 @@ Check out the live site: [Dashboard](https://test-3-me.netlify.app/)
 
 ## About
 
-This website was built using HTML & CSS. It features a design, interactive elements, and stunning visuals.
+This website was built using HTML & CSS. It features a design, interactive elements, and stunning visuals. It's without responsive design .
 
 ## Usage
 
